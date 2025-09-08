@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ALfx Soluciones IT y Más</title>
+  <meta name="description" content="Soluciones IT, mantenimiento de PC, redes, cámaras y más." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logoALFX.png" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #111;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #000;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #2c2c2c;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav a {
+      color: #f5f5f5;
+      text-decoration: none;
+      margin-left: 1.2rem;
+      font-size: 15px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00bcd4;
+    }
+
+    /* HERO DIFUMINADO CON IMAGEN DE FONDO */
+    .hero {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      color: white;
+      overflow: hidden;
+
+      background:
+        linear-gradient(rgba(17, 17, 17, 0.85), rgba(17, 17, 17, 0.85)),
+        url('logoALFX.png') center/cover no-repeat;
+
+      -webkit-mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+      mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      color: #cfcfcf;
+      font-size: 1.2rem;
+      max-width: 600px;
+    }
+
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2.2rem;
+      color: #00bcd4;
+    }
+
+    .servicios {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .servicio {
+      background: #1a1a1a;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #333;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .servicio:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .servicio h3 {
+      margin-bottom: 1rem;
+      color: #87ceeb;
+      font-size: 1.2rem;
+    }
+
+    .servicio i {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #00bcd4;
+    }
+
+    .contacto {
+      text-align: center;
+    }
+
+    .contacto a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      background: #00bcd4;
+      color: #111;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .contacto a:hover {
+      background: #008c9e;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 1rem;
+      font-size: 14px;
+      border-top: 2px solid #2c2c2c;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      nav a {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="logoALFX.png" alt="Logo ALfx" />
+    <nav>
+      <a href="#nosotros">Sobre Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>"Do not be afraid of failure"</h1>
+    <p>Soluciones IT y más con calidad y confianza</p>
+  </section>
+
+  <!-- Sobre Nosotros -->
+  <section id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>
+      En <strong>ALfx Soluciones IT y Más</strong> ofrecemos servicios técnicos profesionales,
+      desde mantenimiento de PCs y Mac, instalaciones eléctricas básicas, 
+      cámaras de seguridad, redes y más. 
+      Nuestra misión es brindar soluciones confiables y accesibles para tu hogar o negocio.
+    </p>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <div class="servicios">
+      <div class="servicio">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Mantenimiento de PC & Mac</h3>
+        <p>Optimización, limpieza y reparación de equipos.</p>
+      </div>
+      <div class="servicio">
+        <i class="fas fa-plug"></i>
+        <h3>Instalaciones Eléctricas</h3>
+        <p>Servicios básicos y soluciones confiables para tu hogar.</p>
+      </div>
+      <div class="servicio">
+        <i class="fas fa-video"></i>
+        <h3>Cámaras de Seguridad</h3>
+        <p>Instalación de CCTV e IP para mayor tranquilidad.</p>
+      </div>
+      <div class="servicio">
+        <i class="fas fa-network-wired"></i>
+        <h3>Redes</h3>
+        <p>Configuración de internet, cableado e infraestructura de red.</p>
+      </div>
+      <div class="servicio">
+        <i class="fas fa-gamepad"></i>
+        <h3>Juegos & Emuladores</h3>
+        <p>Instalación de sistemas y configuraciones gamer.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <p>Puedes escribirnos directamente en nuestras redes:</p>
+    <a href="https://wa.me/50242401958" target="_blank" rel="noopener noreferrer">📱 WhatsApp</a>
+    <a href="mailto:alfxprotec@gmail.com">✉️ Correo</a>
+    <a href="https://www.instagram.com/alfx_it?igsh=MXE4ZXJvN3JibWxlMw==" target="_blank" rel="noopener noreferrer">📷 Instagram</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 ALfx Soluciones IT y Más | Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+</html>
